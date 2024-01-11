@@ -53,9 +53,9 @@ body{
 	background-color: var(--gray-color-200);
 }
 
-.header__nav{
-	display: flex;
-	justify-content: space-between;
+.header__nav {
+	display: grid;
+	grid-auto-flow: column;
 	grid-column-start: 2;
 	padding-right: 40px;
 	max-width: 583px;
@@ -82,16 +82,11 @@ body{
 }	
 
 .header__link:hover::after{
-	width: 100%;
+	width: 85%;
 }
+
 .header__link:focus{
 	color: var(--white-color-a);
-}
-
-.header__line{
-	height: 2px;
-	background-color: var(--white-color);
-
 }
 
 /* blocks */
@@ -150,7 +145,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 413px;
+	min-height: 413px;
 	background-color: var(--white-color-300);
 	padding-top: 70px;
 }

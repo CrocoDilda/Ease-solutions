@@ -1,0 +1,97 @@
+/* Общий адаптив */
+@media (max-width: 1200px) {
+	
+	:root{
+		--container-width: 800px;
+	}
+
+	.header{
+		justify-items: center;
+	}
+
+	.header__nav{
+		grid-column: span 2;
+	}
+
+	.services__button {
+		margin-bottom: 30px;
+	}
+
+	.services__wrapper {
+		grid-auto-flow: row;
+	}
+
+	.services__image-wrapper {
+		margin-left: 30px;
+	}
+
+	.all-projects__wrapper {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: 20px;
+		justify-items: center;
+	}
+
+	.all-projects__button {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 850px) {
+
+	.header__nav {
+		padding: 0 10px;
+	}
+
+	.container{
+		width: 100vw;
+		padding: 0 30px;	
+	}
+
+	.hero {
+		padding-top: 320px;
+	}
+
+	.services__title {
+		margin-top: 100px;
+	}
+
+	.about-us__wrapper {
+		grid-auto-flow: row;
+		grid-template-columns: auto;
+		justify-items: center;
+	}
+
+	.about-us__text-wrapper > * {
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	.about-us__image {
+		margin-top: 30px;
+	}
+
+	.about-us__card-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+	}
+
+	.about-us__card:nth-child(5) {
+		
+	}
+
+	.footer {
+		padding-top: 50px;
+	}
+	
+	.footer__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+	}
+	.footer__list {
+		display: grid;
+		justify-items: center;
+	}
+}
